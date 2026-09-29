@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teteu Burger — Hambúrguer Artesanal</title>
+<meta name="description" content="Peça seu hambúrguer artesanal na Teteu Burger. Confira nosso cardápio, combos, promoções e peça online.">
+<meta property="og:title" content="Teteu Burger — Hambúrguer Artesanal">
+<meta property="og:description" content="Peça seu hambúrguer artesanal na Teteu Burger. Confira nosso cardápio, combos, promoções e peça online.">
+<meta property="og:type" content="restaurant">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Teteu Burger","servesCuisine":"Hambúrguer artesanal","address":{"@type":"PostalAddress","streetAddress":"Rua Exemplo, 123","addressLocality":"Sua cidade"}}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#000;--card:#121212;--card2:#1b1b1b;--red:#e10600;--gold:#d4a24c;--tx:#fff;--mut:#a3a3a3;--ok:#22c55e;--r:20px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:var(--tx);font:16px/1.45 'DM Sans',system-ui,sans-serif;padding-bottom:78px}
+h1,h2,h3,.an{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:.02em;margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.w{max-width:1000px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid #222}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Anton,Impact,sans-serif;font-size:28px;line-height:1;text-transform:uppercase;cursor:pointer}
+.logo b{color:var(--red);font-weight:400}.logo i{font-style:normal;border-bottom:3px solid var(--gold)}
+.pill{padding:6px 12px;border-radius:99px;font-size:13px;font-weight:700;background:var(--card2)}
+.pill.o{color:var(--ok)}.pill.c{color:#ff5a52}
+.btn{background:var(--red);color:#fff;font-weight:700;padding:14px 22px;border-radius:14px;font-size:16px;min-height:48px}
+.btn.g{background:transparent;border:2px solid var(--gold);color:var(--gold)}
+.btn.s{padding:8px 12px;min-height:0;font-size:14px;border-radius:10px}
+.btn:disabled{opacity:.45}
+.hero{padding:34px 0 26px;display:grid;gap:18px;align-items:center;background:radial-gradient(circle at 80% 30%,#5a0a06 0,#000 62%)}
+.hero h1{font-size:clamp(44px,12vw,86px);line-height:.95;text-transform:uppercase}
+.hero p{color:var(--mut);max-width:34ch}
+.big{font-size:min(56vw,260px);text-align:center;line-height:1;filter:drop-shadow(0 20px 40px rgba(225,6,0,.45));animation:fl 4s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px) rotate(-3deg)}}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr 1fr}}
+section{padding:26px 0}
+h2{font-size:30px;text-transform:uppercase;margin-bottom:14px}
+h2 span{color:var(--gold)}
+.row{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.row .card{min-width:240px;scroll-snap-align:start}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid #232323;display:flex;flex-direction:column}
+.ph{height:150px;display:grid;place-items:center;font-size:76px;background:linear-gradient(135deg,#2a0a08,#141414)}
+.cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cb h3{font-size:22px}.cb p{margin:0;color:var(--mut);font-size:14px}
+.pr{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:8px}
+.pr s{color:var(--mut);font-size:13px;margin-right:6px}.pr b{color:var(--gold);font-size:19px}
+.tag{position:absolute;margin:10px;background:var(--gold);color:#000;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px}
+.off{opacity:.45;pointer-events:none}
+.tabs{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;position:sticky;top:calc(60px + env(safe-area-inset-top,0px));background:#000;padding:8px 0;z-index:5}
+.tabs button{background:var(--card2);padding:10px 16px;border-radius:99px;white-space:nowrap;font-weight:700}
+.tabs button.on{background:var(--red)}
+.rev{background:var(--card);border-radius:var(--r);padding:16px;min-width:250px}
+.info{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.box{background:var(--card);border-radius:var(--r);padding:18px;border:1px solid #232323}
+.box h3{font-size:20px;color:var(--gold);margin-bottom:8px}
+.box li{list-style:none;display:flex;justify-content:space-between;color:var(--mut);font-size:14px;padding:2px 0}
+ul{padding:0;margin:0}
+footer{padding:30px 0;color:var(--mut);font-size:13px;border-top:1px solid #222;text-align:center}
+nav.bn{position:fixed;bottom:0;left:0;right:0;background:#0b0b0b;border-top:1px solid #262626;display:flex;justify-content:space-around;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));z-index:30}
+nav.bn button{background:none;color:var(--mut);font-size:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:64px;padding:4px;position:relative}
+nav.bn button span{font-size:22px}
+nav.bn .go{background:var(--red);color:#fff;border-radius:14px;padding:6px 16px;font-weight:700}
+.bd{position:absolute;top:-2px;right:8px;background:var(--red);color:#fff;border-radius:99px;font-size:11px;padding:0 6px;font-weight:700}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:50;display:flex;align-items:flex-end;justify-content:center;animation:fi .2s}
+@keyframes fi{from{opacity:0}}
+.sh{background:#0e0e0e;width:100%;max-width:560px;max-height:92vh;overflow-y:auto;border-radius:24px 24px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));animation:up .25s}
+@keyframes up{from{transform:translateY(40px)}}
+@media(min-width:700px){.ov{align-items:center}.sh{border-radius:24px}}
+.sh h3{font-size:26px}
+label.o{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--card2);padding:12px 14px;border-radius:12px;margin:6px 0;cursor:pointer}
+label.o input{width:20px;height:20px;accent-color:var(--red)}
+.in{width:100%;background:var(--card2);border:1px solid #2c2c2c;border-radius:12px;padding:12px;margin:4px 0}
+.g2{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.it{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #222}
+.it small{color:var(--mut);display:block}
+.q{display:flex;align-items:center;gap:10px}.q button{width:34px;height:34px;border-radius:10px;background:var(--card2);font-size:18px}
+.tot{display:flex;justify-content:space-between;padding:3px 0;color:var(--mut)}
+.tot.f{color:#fff;font-size:20px;font-weight:700;border-top:1px solid #333;margin-top:6px;padding-top:10px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.seg button{background:var(--card2);padding:14px;border-radius:12px;font-weight:700}
+.seg button.on{background:var(--red)}
+.wn{background:#3a2a05;color:#f5cf7a;border-radius:12px;padding:10px 12px;font-size:14px;margin:8px 0}
+#toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--gold);color:#000;padding:10px 18px;border-radius:99px;font-weight:700;z-index:99;display:none}
+/* admin */
+#adm{position:fixed;inset:0;background:#080808;z-index:60;overflow:auto;padding-bottom:20px}
+.at{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;background:#000;position:sticky;top:0;z-index:2;align-items:center}
+.at button{background:var(--card2);padding:10px 14px;border-radius:99px;white-space:nowrap;font-weight:700}.at button.on{background:var(--red)}
+.kb{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));align-items:start}
+.col{background:var(--card);border-radius:16px;padding:10px;min-height:120px}
+.col h3{font-size:18px;margin-bottom:8px}
+.oc{background:var(--card2);border-radius:12px;padding:10px;margin-bottom:8px;font-size:14px}
+.oc.new{animation:pl 1s 3}@keyframes pl{50%{box-shadow:0 0 0 3px var(--gold)}}
+.kp{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin-bottom:14px}
+.kp div{background:var(--card);border-radius:14px;padding:12px}.kp b{display:block;font-size:24px;color:var(--gold);font-family:Anton,sans-serif;font-weight:400}
+.bars{display:flex;gap:8px;align-items:flex-end;height:120px;background:var(--card);border-radius:14px;padding:12px}
+.bars div{flex:1;background:var(--red);border-radius:6px 6px 0 0;min-height:3px;position:relative}
+.bars small{position:absolute;bottom:-18px;left:0;right:0;text-align:center;color:var(--mut);font-size:11px}
+table{width:100%;border-collapse:collapse;font-size:14px}td{padding:6px 4px;border-bottom:1px solid #222}
+td .in{margin:0;padding:6px;min-width:70px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<header><div class="w"><div class="logo" data-a="top"><b>Teteu</b> <i>Burger</i></div><span id="st" class="pill"></span></div></header>
+<main id="app"></main>
+<nav class="bn">
+<button data-a="top"><span>🏠</span>Início</button>
+<button data-a="menu"><span>📖</span>Cardápio</button>
+<button data-a="cart"><span>🛒</span>Carrinho<i class="bd" id="bd"></i></button>
+<button class="go" data-a="menu">PEDIR AGORA</button>
+</nav>
+<div id="ov"></div><div id="adm" hidden></div><div id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),R=n=>'R$ '+Number(n).toFixed(2).replace('.',','),K='teteu_demo_v1',D=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function seed(){
+const P=[['h','Teteu Classic','Blend 150g, queijo prato, alface, tomate e molho da casa.',['Pão brioche','Blend 150g','Queijo prato','Alface','Tomate','Molho da casa'],26,0,'🍔',1],
+['h','Teteu Bacon','Blend 150g, bacon crocante e cheddar cremoso.',['Pão brioche','Blend 150g','Bacon','Cheddar','Cebola roxa'],32,29,'🥓',1],
+['h','Teteu Duplo','Dois blends 150g, dobro de queijo e molho da casa.',['Pão brioche','2 blends 150g','Queijo prato','Picles','Molho da casa'],38,0,'🍔',1],
+['h','Teteu Especial','Blend 180g, queijo, bacon, ovo e cebola caramelizada.',['Pão brioche','Blend 180g','Bacon','Ovo','Cebola caramelizada'],42,0,'⭐',0],
+['h','Teteu Cheddar','Blend 150g, muito cheddar e crispy de cebola.',['Pão brioche','Blend 150g','Cheddar','Crispy de cebola'],34,0,'🧀',0],
+['c','Combo Classic','Teteu Classic + batata da casa + refri.',['Teteu Classic','Batata','Refrigerante'],39,35,'🍟',0],
+['c','Combo Bacon','Teteu Bacon + batata da casa + refri.',['Teteu Bacon','Batata','Refrigerante'],45,0,'🍟',0],
+['c','Combo Duplo','Teteu Duplo + batata cheddar + refri.',['Teteu Duplo','Batata cheddar','Refrigerante'],54,0,'🍟',0],
+['c','Combo Família','4 burgers, 2 batatas e refri 2L.',['4 burgers','2 batatas','Refri 2L'],139,119,'👨‍👩‍👧',0],
+['a','Batata da Casa','Porção crocante temperada.',['Batata','Sal e ervas'],16,0,'🍟',0],
+['a','Batata Cheddar','Batata com cheddar e bacon.',['Batata','Cheddar','Bacon'],22,0,'🧀',0],
+['a','Onion Rings','Anéis de cebola empanados.',['Cebola','Empanado'],18,0,'🧅',0],
+['a','Nuggets','10 unidades com molho.',['Frango','Empanado'],20,0,'🍗',0],
+['b','Coca-Cola','Lata 350ml.',[],6,0,'🥤',0],['b','Coca-Cola Zero','Lata 350ml.',[],6,0,'🥤',0],['b','Guaraná','Lata 350ml.',[],6,0,'🥤',0],['b','Água','Garrafa 500ml.',[],4,0,'💧',0],['b','Suco','Copo 400ml, sabor do dia.',[],9,0,'🍊',0]];
+return{cats:[{id:'h',n:'Hambúrgueres'},{id:'c',n:'Combos'},{id:'a',n:'Acompanhamentos'},{id:'b',n:'Bebidas'}],
+prods:P.map((p,i)=>({id:i+1,cat:p[0],name:p[1],desc:p[2],ing:p[3],price:p[4],promo:p[5],emo:p[6],best:p[7],on:true})),
+adds:[{n:'Bacon extra',p:6},{n:'Queijo extra',p:4},{n:'Hambúrguer extra',p:10},{n:'Molho especial',p:3},{n:'Cebola caramelizada',p:4}],
+cfg:{wa:'5500000000000',insta:'teteuburger',addr:'Rua Exemplo, 123 — Centro',prep:'20–30 min',dprep:'40–60 min',min:20,free:90,radius:8,
+hours:[['18:00','23:30'],null,['18:00','23:30'],['18:00','23:30'],['18:00','23:30'],['18:00','00:30'],['18:00','00:30']],
+fees:{'Centro':5,'Bairro A':7,'Bairro B':9,'Bairro C':12}},
+coupons:[{code:'TETEU10',pct:10,fix:0,min:30,from:'',to:'',limit:100,used:0,on:true}],orders:[],cart:[],form:{type:'d',pay:'pix'},seq:1000};}
+let S;try{S=JSON.parse(localStorage.getItem(K))}catch(e){}S=S||seed();
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const toast=m=>{const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(t.h);t.h=setTimeout(()=>t.style.display='none',2200)};
+const tm=s=>{const[a,b]=s.split(':');return a*60+ +b};
+function openInfo(){const n=new Date(),m=n.getHours()*60+n.getMinutes(),d=n.getDay();
+for(const[dd,mm]of[[d,m],[(d+6)%7,m+1440]]){const h=S.cfg.hours[dd];if(h){let a=tm(h[0]),b=tm(h[1]);if(b<=a)b+=1440;if(mm>=a&&mm<b)return{o:1,t:h[1]}}}
+for(let i=0;i<8;i++){const dd=(d+i)%7,h=S.cfg.hours[dd];if(h&&(i>0||m<tm(h[0])))return{o:0,t:(i==0?'hoje':i==1?'amanhã':D[dd])+' às '+h[0]}}return{o:0,t:'em breve'}}
+const uni=i=>{const p=S.prods.find(x=>x.id==i.pid);return(p?(p.promo||p.price):i.base)+i.add.reduce((s,n)=>s+(S.adds.find(a=>a.n==n)?.p||0),0)};
+function calc(){const f=S.form,sub=S.cart.reduce((s,i)=>s+uni(i)*i.qty,0);let fee=0,conf=false;
+if(f.type=='d'){const k=Object.keys(S.cfg.fees).find(x=>x.toLowerCase()==(f.bairro||'').trim().toLowerCase());if(k)fee=S.cfg.fees[k];else conf=true;if(S.cfg.free&&sub>=S.cfg.free)fee=0}
+let disc=0,cp=S.coupons.find(c=>c.code==f.cp&&cOk(c,sub));if(cp)disc=Math.min(sub,cp.pct?sub*cp.pct/100:cp.fix);
+return{sub,fee,conf,disc,cp,total:Math.max(0,sub+fee-disc)}}
+function cOk(c,sub){const t=new Date().toISOString().slice(0,10);return c.on&&sub>=c.min&&(!c.from||t>=c.from)&&(!c.to||t<=c.to)&&(!c.limit||c.used<c.limit)}
+const card=p=>`<div class="card ${p.on?'':'off'}"><div class="ph">${p.emo}</div>${p.best?'<span class="tag" style="top:0">Mais vendido</span>':''}<div class="cb"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><div class="pr"><div>${p.promo?`<s>${R(p.price)}</s>`:''}<b>${R(p.promo||p.price)}</b></div><button class="btn s" data-a="open" data-id="${p.id}">${p.on?'Adicionar':'Indisponível'}</button></div></div></div>`;
+let tab='h';
+function home(){const c=S.cfg,pr=S.prods;
+$('#app').innerHTML=`<div class="hero w"><div><h1>O sabor que merece sua fome.</h1><p>Hambúrguer artesanal, blend na chapa e molho da casa. Peça online em poucos toques.</p><p style="margin:18px 0"><button class="btn" data-a="menu">PEDIR AGORA</button></p></div><div class="big">🍔</div></div>
+<section class="w"><h2>Mais <span>vendidos</span></h2><div class="row">${pr.filter(p=>p.best&&p.on).map(card).join('')}</div></section>
+<section class="w"><h2><span>Promoções</span></h2><div class="row">${pr.filter(p=>p.promo&&p.on).map(card).join('')}</div></section>
+<section class="w" id="menu"><h2>Cardápio</h2><div class="tabs">${S.cats.map(x=>`<button class="${tab==x.id?'on':''}" data-a="tab" data-id="${x.id}">${esc(x.n)}</button>`).join('')}</div><div class="grid">${pr.filter(p=>p.cat==tab).map(card).join('')||'<p style="color:var(--mut)">Nenhum produto nesta categoria.</p>'}</div></section>
+<section class="w"><h2>Quem <span>provou</span></h2><div class="row">${[['Rafa M.','O Bacon é absurdo de bom. Chegou quentinho.'],['Camila S.','Melhor combo da região, batata sequinha.'],['Diego L.','Entrega rápida e o Duplo é enorme.']].map(r=>`<div class="rev"><div style="color:var(--gold)">★★★★★</div><p>${r[1]}</p><b>${r[0]}</b><div style="color:var(--mut);font-size:12px">Exemplo de avaliação</div></div>`).join('')}</div></section>
+<section class="w info"><div class="box"><h3>Horário</h3><ul>${c.hours.map((h,i)=>`<li><span>${D[i]}</span><span>${h?h[0]+' – '+h[1]:'Fechado'}</span></li>`).join('')}</ul></div>
+<div class="box"><h3>Área de entrega</h3><ul>${Object.entries(c.fees).map(([k,v])=>`<li><span>${esc(k)}</span><span>${R(v)}</span></li>`).join('')}</ul><p style="color:var(--mut);font-size:13px">Frete grátis acima de ${R(c.free)}. Pedido mínimo ${R(c.min)}.</p></div>
+<div class="box"><h3>Fale com a gente</h3><p style="color:var(--mut)">${esc(c.addr)}<br>Retirada: ${c.prep} · Entrega: ${c.dprep}</p><p><a class="btn s g" style="display:inline-block;text-decoration:none" href="https://wa.me/${c.wa}" target="_blank" rel="noopener">WhatsApp</a> <a class="btn s g" style="display:inline-block;text-decoration:none" href="https://instagram.com/${esc(c.insta)}" target="_blank" rel="noopener">Instagram</a></p></div></section>
+<footer><div class="w"><div class="logo"><b>Teteu</b> <i>Burger</i></div><p>© Teteu Burger · Hambúrguer Artesanal<br><a href="#admin" style="color:var(--mut)">Painel da loja</a></p></div></footer>`;stat()}
+function stat(){const o=openInfo(),s=$('#st');s.className='pill '+(o.o?'o':'c');s.textContent=o.o?'🟢 Aberta · até '+o.t:'🔴 Fechada · abre '+o.t;const n=S.cart.reduce((a,i)=>a+i.qty,0);$('#bd').textContent=n||'';$('#bd').style.display=n?'':'none'}
+let M;
+function modal(pid){const p=S.prods.find(x=>x.id==pid);if(!p||!p.on)return;M={p,qty:1,add:[],rm:[],obs:''};const ad=['h','c'].includes(p.cat);
+$('#ov').innerHTML=`<div class="ov" data-a="closeov"><div class="sh"><div class="ph" style="border-radius:16px;margin-bottom:10px">${p.emo}</div><h3>${esc(p.name)} — <span id="mp" style="color:var(--gold)"></span></h3><p style="color:var(--mut)">${esc(p.desc)}</p>
+${ad?`<h3 style="font-size:18px;margin-top:10px">Adicionais</h3>${S.adds.map(a=>`<label class="o"><span>${esc(a.n)}</span><span>+ ${R(a.p)} <input type="checkbox" data-m="add" value="${esc(a.n)}"></span></label>`).join('')}`:''}
+${p.ing.length&&ad?`<h3 style="font-size:18px;margin-top:10px">Remover ingredientes</h3>${p.ing.map(g=>`<label class="o"><span>Sem ${esc(g)}</span><input type="checkbox" data-m="rm" value="${esc(g)}"></label>`).join('')}`:''}
+<textarea class="in" rows="2" placeholder="Observações (ex.: ponto da carne)" data-m="obs"></textarea>
+<div style="display:flex;gap:12px;align-items:center;margin-top:8px"><div class="q"><button data-a="mq" data-d="-1">−</button><b id="mq">1</b><button data-a="mq" data-d="1">+</button></div><button class="btn" style="flex:1" data-a="addcart">Adicionar · <span id="mt"></span></button></div></div></div>`;mup()}
+function mup(){const u=(M.p.promo||M.p.price)+M.add.reduce((s,n)=>s+S.adds.find(a=>a.n==n).p,0);$('#mp').textContent=R(u);$('#mt').textContent=R(u*M.qty);$('#mq').textContent=M.qty}
+function cart(){const c=calc(),f=S.form,o=openInfo();
+const items=S.cart.map((i,x)=>`<div class="it"><div><b>${esc(i.name)}</b><small>${[...i.add.map(a=>'+ '+a),...i.rm.map(r=>'sem '+r)].map(esc).join(', ')}${i.obs?'<br>Obs: '+esc(i.obs):''}</small><b style="color:var(--gold)">${R(uni(i)*i.qty)}</b></div><div class="q"><button data-a="cq" data-x="${x}" data-d="-1">−</button>${i.qty}<button data-a="cq" data-x="${x}" data-d="1">+</button><button data-a="cq" data-x="${x}" data-d="-99">🗑</button></div></div>`).join('');
+const inp=(k,ph,cl='')=>`<input class="in ${cl}" data-f="${k}" placeholder="${ph}" value="${esc(f[k]||'')}">`;
+$('#ov').innerHTML=`<div class="ov" data-a="closeov"><div class="sh"><div style="display:flex;justify-content:space-between"><h3>Seu pedido</h3><button class="btn s g" data-a="close">Fechar</button></div>
+${S.cart.length?items+`<p><button class="btn s g" data-a="clear">Esvaziar carrinho</button></p>
+<div class="seg"><button class="${f.type=='d'?'on':''}" data-a="type" data-t="d">🚗 Entrega</button><button class="${f.type=='p'?'on':''}" data-a="type" data-t="p">🏪 Retirar no local</button></div>
+${inp('name','Seu nome')}${inp('phone','Telefone / WhatsApp')}
+${f.type=='d'?`<div class="g2">${inp('cep','CEP')}${inp('num','Número')}</div>${inp('rua','Rua')}${inp('comp','Complemento')}<datalist id="bl">${Object.keys(S.cfg.fees).map(k=>`<option>${esc(k)}</option>`).join('')}</datalist><input class="in" list="bl" data-f="bairro" data-r="1" placeholder="Bairro" value="${esc(f.bairro||'')}">${inp('cidade','Cidade')}${inp('ref','Ponto de referência')}
+${c.conf&&f.bairro?'<div class="wn">Região não cadastrada: a taxa será confirmada pela hamburgueria.</div>':''}`:`<div class="wn">Retire em: ${esc(S.cfg.addr)}<br>Tempo estimado: ${S.cfg.prep}</div>`}
+<h3 style="font-size:18px;margin-top:8px">Pagamento</h3><div class="seg">${[['pix','Pix'],['din','Dinheiro'],['car',f.type=='d'?'Cartão na entrega':'Cartão na retirada']].map(p=>`<button class="${f.pay==p[0]?'on':''}" data-a="pay" data-p="${p[0]}">${p[1]}</button>`).join('')}</div>
+${f.pay=='din'?`<label class="o"><span>Precisa de troco?</span><input type="checkbox" data-f="troco" data-r="1" ${f.troco?'checked':''}></label>${f.troco?inp('trocoV','Troco para quanto?'):''}`:''}
+<div style="display:flex;gap:8px"><input class="in" data-f="cpi" placeholder="Possui um cupom?" value="${esc(f.cpi||'')}"><button class="btn s" data-a="coupon">Aplicar</button></div>
+<textarea class="in" rows="2" data-f="gobs" placeholder="Observação geral do pedido">${esc(f.gobs||'')}</textarea>
+<div class="tot"><span>Subtotal</span><span>${R(c.sub)}</span></div><div class="tot"><span>Taxa de entrega</span><span>${f.type=='p'?'—':c.conf?'a confirmar':c.fee?R(c.fee):'Grátis'}</span></div>${c.disc?`<div class="tot"><span>Desconto (${esc(c.cp.code)})</span><span>− ${R(c.disc)}</span></div>`:''}<div class="tot f"><span>Total</span><span>${R(c.total)}</span></div>
+${o.o?'':`<div class="wn">Loja fechada. Abre ${o.t}. Você pode enviar o pedido para ser atendido na abertura.</div>`}
+${f.pay=='pix'?'<div class="wn">Pix online ainda não está conectado a um gateway. O pedido será registrado como “aguardando pagamento” e o Pix é combinado pelo WhatsApp.</div>':''}
+<button class="btn" style="width:100%;margin-top:8px" data-a="confirm">Confirmar pedido</button>`:'<p style="color:var(--mut)">Seu carrinho está vazio. Escolha um hambúrguer no cardápio.</p><button class="btn" data-a="menu">Ver cardápio</button>'}</div></div>`}
+function confirmOrder(){const f=S.form,c=calc();
+if(!f.name?.trim()||!f.phone?.trim())return toast('Informe nome e telefone');
+if(f.type=='d'&&(!f.rua||!f.num||!f.bairro||!f.cidade))return toast('Complete o endereço');
+if(c.sub<S.cfg.min)return toast('Pedido mínimo: '+R(S.cfg.min));
+if(c.cp)c.cp.used++;
+const o={id:'TB-'+(++S.seq),t:Date.now(),name:f.name,phone:f.phone,type:f.type,addr:f.type=='d'?`${f.rua}, ${f.num}${f.comp?' - '+f.comp:''}\n${f.bairro}\n${f.cidade}${f.ref?'\nRef.: '+f.ref:''}`:'Retirada',pay:f.pay=='pix'?'Pix':f.pay=='din'?'Dinheiro'+(f.troco?' (troco p/ '+(f.trocoV||'?')+')':''):f.type=='d'?'Cartão na entrega':'Cartão na retirada',obs:f.gobs||'',items:JSON.parse(JSON.stringify(S.cart)).map(i=>({...i,u:uni(i)})),sub:c.sub,fee:c.fee,disc:c.disc,total:c.total,st:'novo',feeConf:c.conf};
+S.orders.push(o);S.cart=[];S.form.cp='';S.form.cpi='';save();stat();
+const L=o.items.map(i=>`${i.qty}x ${i.name} — ${R(i.u*i.qty)}`+[...i.add.map(a=>'\n   + '+a),...i.rm.map(r=>'\n   - sem '+r)].join('')+(i.obs?'\n   Obs: '+i.obs:'')).join('\n');
+const msg=`🍔 NOVO PEDIDO — TETEU BURGER (${o.id})\n\n👤 Cliente: ${o.name}\n📞 ${o.phone}\n\n📦 Pedido:\n${L}\n\n💰 Subtotal: ${R(o.sub)}\n🚚 Entrega: ${o.type=='p'?'Retirada':o.feeConf?'a confirmar':R(o.fee)}${o.disc?`\n🏷️ Desconto: -${R(o.disc)}`:''}\n💵 Total: ${R(o.total)}\n\n📍 Endereço:\n${o.addr}\n\n💳 Pagamento: ${o.pay}${o.pay=='Pix'?' (aguardando)':''}${o.obs?'\n\n📝 Observação:\n'+o.obs:''}`;
+$('#ov').innerHTML=`<div class="ov"><div class="sh" style="text-align:center"><div style="font-size:64px">✅</div><h3>Pedido ${o.id} registrado</h3><p style="color:var(--mut)">Envie para a hamburgueria pelo WhatsApp para confirmar. Total: <b style="color:var(--gold)">${R(o.total)}</b></p><a class="btn" style="display:block;text-decoration:none" target="_blank" rel="noopener" href="https://wa.me/${S.cfg.wa}?text=${encodeURIComponent(msg)}">Enviar pelo WhatsApp</a><p><button class="btn s g" data-a="close">Fechar</button></p><p style="color:var(--mut);font-size:12px">Demonstração: o pedido está salvo só neste navegador.</p></div></div>`}
+const A={
+top(){close();location.hash='';$('#adm').hidden=true;scrollTo(0,0)},menu(){close();($('#menu')||{scrollIntoView(){}}).scrollIntoView()},cart,close,
+closeov(d,e){if(e.target.classList.contains('ov'))close()},tab(d){tab=d.id;home();$('#menu').scrollIntoView()},open(d){modal(+d.id)},
+mq(d){M.qty=Math.max(1,M.qty+ +d.d);mup()},
+addcart(){const p=M.p;S.cart.push({pid:p.id,name:p.name,base:p.promo||p.price,qty:M.qty,add:M.add,rm:M.rm,obs:M.obs});save();close();stat();toast('Adicionado ao carrinho')},
+cq(d){const i=S.cart[+d.x];i.qty+= +d.d;if(i.qty<1)S.cart.splice(+d.x,1);save();stat();cart()},clear(){S.cart=[];save();stat();cart()},
+type(d){S.form.type=d.t;save();cart()},pay(d){S.form.pay=d.p;save();cart()},
+coupon(){const c=calc();const cp=S.coupons.find(x=>x.code==(S.form.cpi||'').trim().toUpperCase());if(cp&&cOk(cp,c.sub)){S.form.cp=cp.code;toast('Cupom aplicado')}else{S.form.cp='';toast('Cupom inválido ou fora das regras')}save();cart()},confirm:confirmOrder};
+function close(){$('#ov').innerHTML=''}
+document.addEventListener('click',e=>{const a=e.target.closest('[data-a]');if(a&&A[a.dataset.a])A[a.dataset.a](a.dataset,e);const b=e.target.closest('[data-x2]');if(b)AD[b.dataset.x2]?.(b.dataset)});
+document.addEventListener('input',e=>{const t=e.target;if(t.dataset.m){if(t.dataset.m=='obs')M.obs=t.value;else{const l=M[t.dataset.m];t.checked?l.push(t.value):l.splice(l.indexOf(t.value),1);mup()}}
+if(t.dataset.f){S.form[t.dataset.f]=t.type=='checkbox'?t.checked:t.value;save();if(t.dataset.r)cart()}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.f=='bairro')cart();if(t.dataset.ad)AD.set(t)});
+/* ADMIN (demo: sem segurança real — produção exige backend) */
+let at='dash',auth=false;
+const ST=[['novo','🔔 Novos'],['prep','👨‍🍳 Em preparo'],['env','🛵 Saiu para entrega'],['fim','✅ Concluídos']];
+function beep(){try{const c=new AudioContext(),o=c.createOscillator();o.connect(c.destination);o.frequency.value=880;o.start();o.stop(c.currentTime+.25)}catch(e){}}
+function adm(){const el=$('#adm');el.hidden=false;
+if(!auth){el.innerHTML=`<div class="w" style="max-width:380px;padding-top:80px"><div class="logo"><b>Teteu</b> <i>Burger</i></div><h2 style="margin-top:20px">Painel da loja</h2><input class="in" id="pw" type="password" placeholder="Senha de demonstração: admin123"><button class="btn" style="width:100%" data-x2="login">Entrar</button><div class="wn">Login de demonstração feito no navegador, sem proteção real. Em produção o login, o hash de senha e as funções ficam no servidor.</div><button class="btn s g" data-a="top">Voltar ao site</button></div>`;return}
+const tabs=[['dash','Painel'],['ped','Pedidos'],['card','Cardápio'],['cfg','Configurações']];
+el.innerHTML=`<div class="at">${tabs.map(t=>`<button class="${at==t[0]?'on':''}" data-x2="tab" data-t="${t[0]}">${t[1]}</button>`).join('')}<button data-a="top">Sair</button></div><div class="w" style="padding-top:14px">${view()}</div>`}
+function view(){const O=S.orders,today=O.filter(o=>new Date(o.t).toDateString()==new Date().toDateString());
+if(at=='dash'){const rev=today.reduce((s,o)=>s+o.total,0),cnt=k=>O.filter(o=>o.st==k).length;
+const days=[...Array(7)].map((_,i)=>{const d=new Date(Date.now()-(6-i)*864e5);return{l:D[d.getDay()].slice(0,3),v:O.filter(o=>new Date(o.t).toDateString()==d.toDateString()).reduce((s,o)=>s+o.total,0)}}),mx=Math.max(1,...days.map(d=>d.v));
+return`<h2>Painel</h2><div class="kp"><div>Pedidos hoje<b>${today.length}</b></div><div>Faturamento<b>${R(rev)}</b></div><div>Pendentes<b>${cnt('novo')}</b></div><div>Em preparo<b>${cnt('prep')}</b></div><div>Enviados<b>${cnt('env')}</b></div><div>Concluídos<b>${cnt('fim')}</b></div><div>Ticket médio<b>${R(today.length?rev/today.length:0)}</b></div></div><h3 style="margin:10px 0">Vendas (7 dias)</h3><div class="bars" style="margin-bottom:26px">${days.map(d=>`<div style="height:${d.v/mx*100}%"><small>${d.l}</small></div>`).join('')}</div>`}
+if(at=='ped')return`<h2>Pedidos</h2><div class="kb">${ST.map((s,i)=>`<div class="col"><h3>${s[1]}</h3>${O.filter(o=>o.st==s[0]).reverse().map(o=>`<div class="oc ${o.isNew?'new':''}"><b>${o.id}</b> · ${new Date(o.t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}<br>${esc(o.name)} · ${esc(o.phone)}<br>${o.items.map(x=>x.qty+'x '+esc(x.name)).join(', ')}<br><b>${R(o.total)}</b> · ${esc(o.pay)}<br><small style="color:var(--mut)">${esc(o.addr).replace(/\n/g,'<br>')}${o.obs?'<br>Obs: '+esc(o.obs):''}</small><div style="margin-top:6px;display:flex;gap:6px">${i?`<button class="btn s g" data-x2="mv" data-id="${o.id}" data-s="${ST[i-1][0]}">◀</button>`:''}${i<3?`<button class="btn s" data-x2="mv" data-id="${o.id}" data-s="${ST[i+1][0]}">Avançar ▶</button>`:''}</div></div>`).join('')||'<small style="color:var(--mut)">Vazio</small>'}</div>`).join('')}</div>`;
+if(at=='card')return`<h2>Cardápio</h2><div style="overflow-x:auto"><table><tr><td>Produto</td><td>Preço</td><td>Promo</td><td>Ativo</td><td>Top</td><td></td></tr>${S.prods.map(p=>`<tr><td>${p.emo} ${esc(p.name)}</td><td><input class="in" type="number" step="0.5" data-ad="price" data-id="${p.id}" value="${p.price}"></td><td><input class="in" type="number" step="0.5" data-ad="promo" data-id="${p.id}" value="${p.promo}"></td><td><input type="checkbox" data-ad="on" data-id="${p.id}" ${p.on?'checked':''}></td><td><input type="checkbox" data-ad="best" data-id="${p.id}" ${p.best?'checked':''}></td><td><button class="btn s g" data-x2="del" data-id="${p.id}">Excluir</button></td></tr>`).join('')}</table></div>
+<h3 style="margin:16px 0 6px">Novo produto</h3><div class="g2"><input class="in" id="np" placeholder="Nome"><input class="in" id="npp" type="number" placeholder="Preço"></div><select class="in" id="npc">${S.cats.map(c=>`<option value="${c.id}">${esc(c.n)}</option>`).join('')}</select><button class="btn s" data-x2="addp">Criar produto</button>
+<h3 style="margin:16px 0 6px">Categorias</h3><div style="display:flex;gap:8px"><input class="in" id="nc" placeholder="Nova categoria"><button class="btn s" data-x2="addc">Criar</button></div>
+<h3 style="margin:16px 0 6px">Adicionais</h3>${S.adds.map(a=>`<div class="tot"><span>${esc(a.n)}</span><span>${R(a.p)}</span></div>`).join('')}<div class="g2"><input class="in" id="na" placeholder="Nome"><input class="in" id="nap" type="number" placeholder="Preço"></div><button class="btn s" data-x2="adda">Criar adicional</button>`;
+const c=S.cfg,fld=(k,l,t='text')=>`<label>${l}<input class="in" type="${t}" data-ad="cfg" data-k="${k}" value="${esc(c[k])}"></label>`;
+return`<h2>Configurações</h2>${fld('addr','Endereço')}${fld('wa','WhatsApp (55DDDNÚMERO)')}${fld('insta','Instagram')}${fld('prep','Tempo de retirada')}${fld('dprep','Tempo de entrega')}${fld('min','Pedido mínimo (R$)','number')}${fld('free','Frete grátis acima de (R$)','number')}${fld('radius','Raio máximo (km) — validar no servidor com o CEP','number')}
+<h3 style="margin:14px 0 6px">Bairro → taxa de entrega</h3>${Object.entries(c.fees).map(([k,v])=>`<div class="tot"><span>${esc(k)}</span><span>${R(v)} <button class="btn s g" data-x2="delf" data-k="${esc(k)}">✕</button></span></div>`).join('')}<div class="g2"><input class="in" id="fb" placeholder="Bairro"><input class="in" id="fv" type="number" placeholder="Taxa"></div><button class="btn s" data-x2="addf">Salvar taxa</button>
+<h3 style="margin:14px 0 6px">Horários por dia</h3>${c.hours.map((h,i)=>`<div class="g2"><span>${D[i]}</span><span><input class="in" style="width:45%" data-ad="h" data-i="${i}" data-j="0" value="${h?h[0]:''}" placeholder="fechado"> <input class="in" style="width:45%" data-ad="h" data-i="${i}" data-j="1" value="${h?h[1]:''}" placeholder="fechado"></span></div>`).join('')}
+<h3 style="margin:14px 0 6px">Cupons</h3>${S.coupons.map((p,i)=>`<div class="tot"><span>${esc(p.code)} · ${p.pct?p.pct+'%':R(p.fix)} · mín ${R(p.min)} · ${p.used}/${p.limit||'∞'}</span><span><input type="checkbox" data-ad="cpon" data-i="${i}" ${p.on?'checked':''}></span></div>`).join('')}
+<div class="g2"><input class="in" id="cc" placeholder="Código"><input class="in" id="cpc" type="number" placeholder="% desconto"></div><div class="g2"><input class="in" id="cf" type="number" placeholder="ou R$ fixo"><input class="in" id="cm" type="number" placeholder="Pedido mín."></div><div class="g2"><input class="in" id="ci" type="date"><input class="in" id="ct" type="date"></div><input class="in" id="cl" type="number" placeholder="Limite de usos"><button class="btn s" data-x2="addcp">Criar cupom</button>
+<h3 style="margin:18px 0 6px">Para ativar em produção</h3><div class="box"><ul style="font-size:14px;color:var(--mut)"><li>Backend + banco: servidor com API, banco de dados e pedidos com ID único</li><li>Login admin: ADMIN_EMAIL, senha com hash, JWT_SECRET</li><li>Pix: PIX_GATEWAY (Mercado Pago/Stripe), GATEWAY_TOKEN, WEBHOOK_SECRET</li><li>Preço recalculado no servidor antes de confirmar</li><li>Aviso ao cliente: WhatsApp Business API (WA_API_TOKEN)</li></ul></div>`}
+const AD={login(){if($('#pw').value=='admin123'){auth=true;adm()}else toast('Senha incorreta')},tab(d){at=d.t;adm()},
+mv(d){S.orders.find(o=>o.id==d.id).st=d.s;save();adm()},
+del(d){if(confirm('Excluir produto?')){S.prods=S.prods.filter(p=>p.id!=d.id);save();adm()}},
+addp(){const n=$('#np').value.trim(),p=+$('#npp').value;if(!n||!p)return toast('Informe nome e preço');S.prods.push({id:Date.now(),cat:$('#npc').value,name:n,desc:'Descrição do produto',ing:[],price:p,promo:0,emo:'🍔',best:0,on:true});save();adm()},
+addc(){const n=$('#nc').value.trim();if(n){S.cats.push({id:'c'+Date.now(),n});save();adm()}},
+adda(){const n=$('#na').value.trim();if(n){S.adds.push({n,p:+$('#nap').value||0});save();adm()}},
+addf(){const b=$('#fb').value.trim();if(b){S.cfg.fees[b]=+$('#fv').value||0;save();adm()}},delf(d){delete S.cfg.fees[d.k];save();adm()},
+addcp(){const c=$('#cc').value.trim().toUpperCase();if(!c)return;S.coupons.push({code:c,pct:+$('#cpc').value||0,fix:+$('#cf').value||0,min:+$('#cm').value||0,from:$('#ci').value,to:$('#ct').value,limit:+$('#cl').value||0,used:0,on:true});save();adm()},
+set(t){const d=t.dataset,k=d.ad,id=+d.id,p=S.prods.find(x=>x.id==id);
+if(k=='price')p.price=+t.value||0;else if(k=='promo')p.promo=+t.value||0;else if(k=='on'||k=='best')p[k]=t.checked;
+else if(k=='cfg'){const n=['min','free','radius'].includes(d.k);S.cfg[d.k]=n?+t.value:t.value}
+else if(k=='h'){const h=S.cfg.hours,i=+d.i;const v=[...(h[i]||['',''])];v[+d.j]=t.value;h[i]=v[0]&&v[1]?v:null}
+else if(k=='cpon')S.coupons[+d.i].on=t.checked;save()}};
+function route(){if(location.hash=='#admin')adm();else{$('#adm').hidden=true}}
+addEventListener('hashchange',route);
+addEventListener('storage',e=>{if(e.key==K){try{const n=JSON.parse(e.newValue);if(n.orders.length>S.orders.length){n.orders[n.orders.length-1].isNew=1;beep();toast('🔔 Novo pedido!')}S=n;if(auth)adm()}catch(x){}}});
+home();route();setInterval(stat,60000);
+</script>
+</body>
+</html>
